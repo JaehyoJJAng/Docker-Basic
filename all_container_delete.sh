@@ -4,4 +4,4 @@
 docker="$(which docker)"
 
 # Delete All Containers
-${docker} container rm --force $(docker container ls --all --quiet)
+${docker} container rm --force $(docker container ls --all --quiet) 2>/dev/null
